@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--bootStrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div  class="wrapper">
+        <section id="secction1"  class="my-3">
+            <div>
+                <button id="startBtn" class="r-50 d-block border border-info border-2 m-auto">START GAME</button>
+                <button id="restartBtn" class="r-50 d-block border border-info border-2 m-auto">RESTART GAME</button>
+
+            </div>
+        </section>
+        <section id="secction2" >
+            <div id="leftBoard" class="fl-l border border-info border-3 bg-dark h-500px w-800px bg-secondary position-relative m-auto r-50">
+                <div id="target" class="bg-info border border-light p-2 position-absolute r-50 pointer">
+                   <b>Catch me if You Can !</b>
+                </div>
+            </div>
+            <div  id="rightBoard" class="fl-r  ml-5 w-200px">
+                <div class="p-1 mb-1 bg-light border border-3 border-info r-50 position-relative">
+                    <span class="title">Timer:</span>
+                    <span id="clock" class="red">60</span> s <b><span id="secPoint" class="position-absolute">.</span></b>
+                </div>
+                <div class="p-1 mb-1 bg-light border border-3 border-info r-50">
+                    <span class="title">Score:</span>
+                    <span id="score" class="red">0</span>
+                </div>
+                <div class="p-1 mb-1 bg-light border border-3 border-info r-50">
+                    <span class="title">Points to next level:</span>
+                    <span id="toNextLevel" class="red">10</span>
+                </div>
+                <div class="p-1 mb-1 bg-light border border-3 border-info r-50">
+                    <span class="title">Level:</span>
+                    <span id="levelDisplay" class="red">1</span>
+                </div>
+                <div class="p-1 mb-1 bg-light border border-3 border-info r-50">
+                    <span class="title">Missed clicks:</span>
+                    <span id="missed" class="red">0</span>
+                </div>
+                <div id="bestScores" class="p-1 mb-1 bg-light border border-3 border-info r-50">
+                    <span class="title" class="red">Best Scores:</span> 
+                    <p>
+                        <span  class="txt-center red">
+                            
+                            <div id="player1" class="pos-rel">
+                                <div id="date1" class="date hidden pos-abs top-15 text-body fs-12 bg-info">date1</div>1 : 
+                                <span id="name1" class="red"></span> : &nbsp;
+                                <span id="score1" class="red"></span></div>
+                            <div id="player2" class="pos-rel">
+                                <div id="date2" class="date hidden pos-abs top-15 text-body fs-12 bg-info">date2</div>2 : 
+                                <span id="name2" class="red"></span> : &nbsp;
+                                <span id="score2" class="red"></span></div>
+                            <div id="player3" class="pos-rel">
+                                <div id="date3" class="date hidden pos-abs top-15 text-body fs-12 bg-info">date3</div>3 : 
+                                <span id="name3" class="red"></span> : &nbsp;
+                                <span id="score3" class="red"></span></div>
+                            <div id="player4" class="pos-rel">
+                                <div id="date4" class="date hidden pos-abs top-15 text-body fs-12 bg-info">date4</div>4 : 
+                                <span id="name4" class="red"></span> : &nbsp;
+                                <span id="score4" class="red"></span></div>
+                            <div id="player5" class="pos-rel">
+                                <div id="date5" class="date hidden pos-abs top-15 text-body fs-12 bg-info">date5</div>5 : 
+                                <span id="name5" class="red"></span> : &nbsp;
+                                <span id="score5" class="red"></span></div>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of wrapper -->
+    </div>
+
+</body>
+</html>
+
+<script src="js/main.js"></script>

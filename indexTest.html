@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--bootStrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <wrapper>
+        <section id="secction1">
+            <div>
+                <button id="startBtn" class="d-block border border-dark m-auto">START</button>
+            </div>
+        </section>
+        <section id="secction2" class="border border-primary border-5 h-200px w-60 bg-secondary position-relative m-auto">
+            <div id="catchDiv" class="bg-primary border border-dark p-2 position-absolute top-50 start-50">
+                Catch me if You Can !
+            </div>
+        </section>
+        <section  id="secction3">
+            <div>
+                Timer: <span id="clock">60</span> s
+            </div>
+            <div>
+                score: <span id="score">0</span>
+            </div>
+            <div>
+                points to next level: <span id="toNextLevel">10</span>
+            </div>
+            <div>
+                Level: <span id="levelDisplay">1</span>
+            </div>
+            <div>
+               Missed clicks: <span id="missed">0</span>
+            </div>
+            <div>
+                Best Scores:<br>
+                <p>
+                    <span id="bestScores">
+                        <span id="date"></span>
+                        <span id="name1"></span><span id="score1"></span>
+                        <span id="name2"></span><span id="score2"></span>
+                        <span id="name3"></span><span id="score3"></span>
+                        <span id="name4"></span><span id="score4"></span>
+                    </span>
+                </p>
+             </div>
+        </section>
+    </wrapper>
+
+</body>
+</html>
+
+<script src="js/mainTest.js"></script>
